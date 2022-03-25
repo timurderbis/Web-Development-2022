@@ -1,0 +1,17 @@
+#rating{
+  color: red;
+  font-weight: bold;
+}
+#links{
+  display: flex;
+}
+.linkes{
+  margin: 10px;
+}
+#count{
+  color: #EEEEEE;
+}
+.like_btn{
+  height: 30px;
+  width: 80px;
+}

@@ -1,0 +1,39 @@
+<div *ngFor="let fourthcat of fourthcat">
+  <h3>
+    <a [title]="fourthcat.name + ' details'">
+      {{fourthcat.name}}
+    </a>
+    <br />
+  </h3>
+
+  <p id="rating" *ngIf="fourthcat.rating">
+    Rating: {{fourthcat.rating}}
+  </p>
+
+  <p *ngIf="fourthcat.description">
+    Description: {{fourthcat.description}}
+  </p>
+
+  <div class="images">
+    <a href="{{fourthcat.link}}">
+      <img id="img" src="{{fourthcat.image}}" width="300" alt="images" />
+    </a>
+  </div>
+  <like-box></like-box>
+
+  <button id="remove" (click)="onRemove(fourthcat)"> Remove </button>
+  <br />
+  <div id="links">
+    <a class="linkes"
+       href="https://api.whatsapp.com/send?phone=77004799747&text=Check this web  store!! https://project-shop.stackblitz.io/"
+       target="_blank">
+      <button>Whatsapp</button>
+    </a>
+    <br />
+    <a class="linkes"
+       href="https://telegram.me/share/url?url=Dastan!&text= Check this web store!! https://project-shop.stackblitz.io/"
+       target="_blank">
+      <button>Telegram</button>
+    </a>
+  </div>
+</div>

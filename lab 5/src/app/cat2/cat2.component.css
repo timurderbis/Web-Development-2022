@@ -1,0 +1,10 @@
+#rating{
+  color: red;
+  font-weight: bold;
+}
+#links{
+  display: flex;
+}
+.linkes{
+  margin: 10px;
+}

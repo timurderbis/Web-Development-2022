@@ -1,0 +1,39 @@
+<div *ngFor="let thirdcat of thirdcat">
+  <h3>
+    <a [title]="thirdcat.name + ' details'">
+      {{thirdcat.name}}
+    </a>
+    <br />
+  </h3>
+
+  <p id="rating" *ngIf="thirdcat.rating">
+    Rating: {{thirdcat.rating}}
+  </p>
+
+  <p *ngIf="thirdcat.description">
+    Description: {{thirdcat.description}}
+  </p>
+
+  <div class="images">
+    <a href="{{thirdcat.link}}">
+      <img id="img" src="{{thirdcat.image}}" width="300" alt="images" />
+    </a>
+  </div>
+  <like-box></like-box>
+
+  <button id="remove" (click)="onRemove(thirdcat)"> Remove </button>
+  <br />
+  <div id="links">
+    <a class="linkes"
+       href="https://api.whatsapp.com/send?phone=77004799747&text=Check this web  store!! https://project-shop.stackblitz.io/"
+       target="_blank">
+      <button>Whatsapp</button>
+    </a>
+    <br />
+    <a class="linkes"
+       href="https://telegram.me/share/url?url=Dastan!&text= Check this web store!! https://project-shop.stackblitz.io/"
+       target="_blank">
+      <button>Telegram</button>
+    </a>
+  </div>
+</div>

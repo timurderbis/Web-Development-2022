@@ -1,0 +1,10 @@
+<h3>Listed category products</h3>
+<div *ngFor="let category of category">
+  <h3>
+    <a [title]="category.name + ' details'">
+      {{category.name}}
+    </a>
+    <br />
+  </h3>
+
+</div>

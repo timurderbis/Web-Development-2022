@@ -1,0 +1,39 @@
+<div *ngFor="let firstcat of firstcat">
+  <h3>
+    <a [title]="firstcat.name + ' details'">
+      {{firstcat.name}}
+    </a>
+    <br />
+  </h3>
+
+  <p id="rating" *ngIf="firstcat.rating">
+    Rating: {{firstcat.rating}}
+  </p>
+
+  <p *ngIf="firstcat.description">
+    Description: {{firstcat.description}}
+  </p>
+
+  <div class="images">
+    <a href="{{firstcat.link}}">
+      <img id="img" src="{{firstcat.image}}" width="300" alt="images" />
+    </a>
+  </div>
+  <like-box></like-box>
+
+  <button id="remove" (click)="onRemove(firstcat)"> Remove </button>
+  <br />
+  <div id="links">
+    <a class="linkes"
+       href="https://api.whatsapp.com/send?phone=77004799747&text=Check this web  store!! https://project-shop.stackblitz.io/"
+       target="_blank">
+      <button>Whatsapp</button>
+    </a>
+    <br />
+    <a class="linkes"
+       href="https://telegram.me/share/url?url=Dastan!&text= Check this web store!! https://project-shop.stackblitz.io/"
+       target="_blank">
+      <button>Telegram</button>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.col{
+  margin: 5px;
+}
+#inc{
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+}
+#dislikebtn{
+  background-color: red;
+}

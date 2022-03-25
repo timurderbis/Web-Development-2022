@@ -1,0 +1,39 @@
+<div *ngFor="let secondcat of secondcat">
+  <h3>
+    <a [title]="secondcat.name + ' details'">
+      {{secondcat.name}}
+    </a>
+    <br />
+  </h3>
+
+  <p id="rating" *ngIf="secondcat.rating">
+    Rating: {{secondcat.rating}}
+  </p>
+
+  <p *ngIf="secondcat.description">
+    Description: {{secondcat.description}}
+  </p>
+
+  <div class="images">
+    <a href="{{secondcat.link}}">
+      <img id="img" src="{{secondcat.image}}" width="300" alt="images" />
+    </a>
+  </div>
+  <like-box></like-box>
+
+  <button id="remove" (click)="onRemove(secondcat)"> Remove </button>
+  <br />
+  <div id="links">
+    <a class="linkes"
+       href="https://api.whatsapp.com/send?phone=77004799747&text=Check this web  store!! https://project-shop.stackblitz.io/"
+       target="_blank">
+      <button>Whatsapp</button>
+    </a>
+    <br />
+    <a class="linkes"
+       href="https://telegram.me/share/url?url=Dastan!&text= Check this web store!! https://project-shop.stackblitz.io/"
+       target="_blank">
+      <button>Telegram</button>
+    </a>
+  </div>
+</div>
