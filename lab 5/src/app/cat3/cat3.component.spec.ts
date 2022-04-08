@@ -8,8 +8,9 @@ describe('Cat3Component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Cat3Component ]
-    })
+    declarations: [Cat3Component],
+    teardown: { destroyAfterEach: false }
+})
     .compileComponents();
   });
 
